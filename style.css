@@ -1,8 +1,7 @@
 body{
-    background-color: skyblue;
     background-image: url(./images/horses-snow-running-4k-z0-1920x1080.jpg);
 }
-.image1
+section.sectimage1
 {
    text-align: right;
 }
@@ -13,7 +12,21 @@ img{
     max-width: 30%;
     max-height: 30%;
 }
-.content1
+div.content1
 {
+    position: relative;
+    top:2px;
     text-align: left;
+    overflow-wrap: break-word ;
+}
+h2{
+    color:limegreen;
+}
+#button1{
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    border-radius: 12px;
+    color: red;
+    text-decoration: dotted;
 }
