@@ -1,13 +1,56 @@
-body{
-    background-image: url(./images/cat-fire-eyes-yx-1920x1080.jpg);
+.navigation-bar{
+    color: blue;
+    font-size: x-large;
+    float : right
+
+  }
+  body h1{
+    color: green;
+    text-align: center;
+    background: color #1f158b;;
 }
+
+#myImages img {
+    text-align: justify;
+    height: 400px;
+    width: 2050px;
+    text-align: center;
+    
+
+}
+.content1{
+    background-color: #4e44c9;
+    font-size: x-large;
+    line-height: 4;
+    width: 50%;
+}
+
+.myForm{
+    float: right;
+    text-align: right;
+    background-color: #c63256;
+    width: 50%;
+}
+.myTable{
+    width: 50%;
+    flex-direction: column;
+    background-color:#D9D9D9;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
 .sectimage1
 {
    text-align: center;
 }
-body h1{
-    text-align: center;
-}
+
 img{
     max-width: 30%;
     max-height: 30%;
