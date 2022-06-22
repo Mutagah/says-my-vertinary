@@ -15,11 +15,11 @@ fetch("https://dog.ceo/api/breed/hound/images/random/3")
             } )
 }
 function fillingImages(data){
-        const myImages = data["message"]
-        console.log(myImages)
-        myImages.forEach(element => {
-        let imgTag =  document.createElement("img")
-        imgTag.setAttribute("src",element)    
-        ImagesDivision.appendChild(imgTag)
-    });
+    const myImages = data["message"]
+    console.log(myImages)
+    myImages.forEach(element => {
+    let imgTag =  document.createElement("img")
+    imgTag.setAttribute("src",element)    
+    ImagesDivision.appendChild(imgTag)
+});
 }
