@@ -14,9 +14,9 @@
 <body>
     <header>
     <div>
-    <h1 style = "font-family: 'Arvo', serif ">My vetinary Says
+    <h1>My Vetinary Says
         <div class = "navigation-bar">
-            <a href="Cats-Veterinaries" style="color: #fc0303; text-decoration: none;"> Cat Vetinaries</a>
+            <a  id ="myDownList" href="Cats-Veterinaries" style="color: #fc0303; text-decoration: none;"> Vetinary List</a>
         </div> 
        
     </h1>
@@ -26,7 +26,7 @@
     <div class="contents">
         <div class="doggy">
              <div class="content1">
-                    <h3 style="text-align:center; color: #ffa00f;">General guidelines for dogs</h3>
+                    <h3>General guidelines for dogs</h3>
                 <ul>  
                     <li>Have <strong>regular</strong> deworming (2 to 3 months)</li>
                     <li>Take me to the vertinary <strong>oftenly</strong> for check-ups</li>
@@ -42,19 +42,19 @@
                 <h2>Vet Registration Form</h2>
                 <br>
                 <br>
-            <form>
-                <label >Veterinary Doctor Name:</label>
-                <input id="vetName">
-                <br>
-                <br>
-                <br>
-                <label>Veterinary Phone Number:</label>
-                <input id="vetPhonenumber">
-                <br>
-                <br>
-                <button id="button2">Register with us</button>
-            </form>
-        </div>
+                <form>
+                    <label >Veterinary Doctor Name:</label>
+                    <input id="vetName" type="text" name="vetName">
+                    <br>
+                    <br>
+                    <br>
+                    <label>Veterinary Phone Number:</label>
+                    <input id="vetPhoneNumber" type="text" name="vetPhoneNumber">
+                    <br>
+                    <br>
+                    <button id="button2">Register with us</button>
+                </form>
+            </div>
         <div class="myTable">
             <br>
             <h2 style="text-align:center; color: #ffa00f;">Dogs Vaccination Table</h2>
@@ -84,9 +84,12 @@
                 <td>Rabies(recommended 1 year)</td>
             </tr>
        </table>                
-        
         </div>
         </div>
+    </div>
+    <div class="vetList">
+        <h3>List of veterinaries and their contacts</h3>
+        <ul id="myVeterinaryList"></ul>
     </div>
     <p id="note">Animals in general need to be taken care for by everyone in the society and it is our task as a society to achieve this.</p>
 <script type="text/javascript" src="script.js"></script>

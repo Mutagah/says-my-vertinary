@@ -6,13 +6,14 @@
 h1{
     font-size: 50px;
     padding: 40px;
+    font-family: 'Arvo', serif
 }
 .navigation-bar{
     font-size: x-large;
     float : right
 
   }
-  header{
+header{
     color: #ffa500;
     background-color: #202a45;
   }
@@ -92,6 +93,10 @@ body{
     margin-right: -5px;
     margin-top: 9px;
 }
+#myVeterinaryList li{
+    font-size: x-large;
+    margin-left: 20px;
+}
 
 .myTable{
     box-shadow: 0px 0px 8px 2px;
@@ -123,6 +128,8 @@ img{
 }
 h3{
     line-height: 2;
+    text-align: center;
+    font-size: x-large;
 }
 p #animal{
     text-align: center;
@@ -139,14 +146,26 @@ table,th,td{
     text-align: center;
     font-size: xx-large;
 }
-
+.vetList{
+    background-color:#202a45;
+    color:#ffa500;
+    margin-top: -100px;
+    
+}
 @media screen and (max-width: 1250px) {
     .contents {
         flex-direction: column;
+        width:auto;
     }
-  .doggy2{
-    margin-left: 200px;
-    margin-top: 50px;
-  }
-   
+.myForm{
+    margin-top: 20px;
+        width : 500px;
+        height : 350px;
+    }
+
+  .content1{
+    width:auto;
+    flex-direction: column;
+    margin-left: 50px;
+  }  
 }
