@@ -96,6 +96,7 @@ body{
     padding-right: 200px;
 }
 .myForm input{
+    text-align: center;
     width: 250px;
     height: 25px;
 }
@@ -196,15 +197,17 @@ th{
     font-size: xx-large;
     padding-top: 20px;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 750px) {
     .contents {
         flex-direction: column;
         width:auto;
     }
 .myForm{
+    flex-direction: column;
     margin-top: 20px;
         width : 500px;
         height : 350px;
+        margin-left: 40px;
     }
 
   .content1{
@@ -212,5 +215,22 @@ th{
     flex-direction: column;
     margin-left: 50px;
   }  
+  .myTable{
+    display: none;
+  }
+  .vetList{
+    margin-top: 0px;
+  }
+  #myImages img {
+    /* text-align: center; */
+    margin-left: -20px;
+    height: 400px;
+    width: 2500px;
+}
+.like-glyph2{
+    position: absolute;
+    font-size: 50px;
+    margin-left : -630px;
+    margin-top: -80px;
 }
 
