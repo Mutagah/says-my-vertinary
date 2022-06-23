@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded",(event) => {
     event.preventDefault()
+    hoverlinkFunction()
     fetchingData()
     jsonDataDisplay()
+    likeinteractivity()
 })
 const clicked1 = document.getElementById("button1")
+const likeHeart = document.querySelectorAll(".like-glyph")
+const myListLink = document.getElementById("myDownList")
 const ImagesDivision = document.getElementById("myImages")
 const registerButton = document.getElementById("button2")
 const VetNameInput = document.getElementById("vetName")
@@ -32,16 +36,14 @@ function jsonDataDisplay(){
 }
 function displayNamesFromServer(element,number){
     const myList = document.createElement("li")
-    myList.addEventListener("onmouseover",()=>
+    
+    myList.addEventListener("click",()=>
     {
         const numberLabel = document.createElement("label")
         numberLabel.textContent = `${number}`
         myList.appendChild(numberLabel)
     })
-    // const numberLabel = document.createElement("label")
-    // numberLabel.textContent = `${number}`
     myList.innerHTML = element;
-    // myList.appendChild(numberLabel)
     document.querySelector("#myVeterinaryList").appendChild(myList)
 
 
@@ -73,5 +75,30 @@ function postingData(myData){
         // fetch(" http://localhost:3000/VeterinaryDoctors",configuredObject)
         //     .then(response => response.json())
         //     .then(data => console.log(data))
+    })
+}
+function hoverlinkFunction(){
+
+    myListLink.addEventListener("mouseover",() =>
+    {
+    myListLink.style.color = "blue";
+    })
+    
+}
+function likeinteractivity(){
+    const EMPTY_HEART = '♡'
+    const FULL_HEART = '♥'
+    likeHeart.addEventListener("click", (event) => {
+        alert("Hello")
+    //     let heart = event.target
+    // if (heart.textContent === EMPTY_HEART)
+    // {
+    //   heart.textContent = FULL_HEART
+    //   heart.classList.add('activated-heart')
+    // }else{
+    //   heart.textContent = EMPTY_HEART
+    //   heart.classList.remove('activated-heart')
+    // }
+
     })
 }

@@ -108,7 +108,12 @@ body{
     color: #ffa500;
     height: 362px;
 }
-
+ .like-glyph{
+    font-size: 55px;
+} 
+.activated-heart{
+    color: black;
+}
 .myTable table{
     padding: 58px 100px;
 
@@ -146,7 +151,9 @@ table,th,td{
     text-align: center;
     font-size: xx-large;
 }
-.vetList{
+.vetList{ 
+    padding-left: 5%;
+    text-align: center;
     background-color:#202a45;
     color:#ffa500;
     margin-top: -100px;
