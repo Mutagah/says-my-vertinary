@@ -11,12 +11,11 @@ h1{
 .navigation-bar{
     font-size: x-large;
     float : right
-
-  }
+}
 header{
     color: #ffa500;
     background-color: #202a45;
-  }
+}
 body{
     background-color: #ffffff;
 }
@@ -27,7 +26,6 @@ body{
     height: 400px;
     width: 2500px;
 }
-
 .contents{
     padding-top: 20px;
     display: flex;
@@ -52,12 +50,19 @@ body{
 .content1 span{
     font-size: 150px;
 }
-.like-glyph{
+/* .like-glyph{
+    border-style: none;
+    color: #ffa500;
+    cursor: pointer;
     position: absolute;
+    font-size: 160px;
     top: 260px;
     left: -140px;
-}
+    margin-left: -10px;
+    margin-top: 200px;
+} */
 .like-glyph2{
+    border-style: none;
     color: #ffa500;
     position: absolute;
     top: 460px;
@@ -70,7 +75,6 @@ body{
     margin-left: 20px;
     width: 212px;
     position: relative;
-
 }
 .myForm{
     box-shadow: 0px 0px 8px 2px;
@@ -87,11 +91,13 @@ body{
     padding-bottom: 20px;
 }
 .myForm label{
-    font-size: large;
+    text-align: right;
+    font-size: x-large;
     padding-right: 200px;
 }
 .myForm input{
-    width: 200px;
+    width: 250px;
+    height: 25px;
 }
 .myForm #vetPhonenumber{
     padding: 10px 20px;
@@ -115,7 +121,6 @@ a{
     color: #fc0303;
     text-decoration: none;
 }
-
 .myTable{
     box-shadow: 0px 0px 8px 2px;
     border-radius: 90px;
@@ -127,7 +132,7 @@ a{
     height: 362px;
 }
 .activated-heart{
-    color: black;
+    color: #fc0303;
 }
 .myTable table{
     padding: 58px 100px;

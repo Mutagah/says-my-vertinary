@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded",(event) => {
 })
 const clicked1 = document.getElementById("button1")
 const VetFormName = document.getElementById("vetName")
-const likeHeart = document.getElementsByClassName("like-glyph")
+// const likeHeart = document.getElementById("button2")
+const likeHeart2 = document.getElementById("button3")
 const myListLink = document.getElementById("myDownList")
 const ImagesDivision = document.getElementById("myImages")
 const registerButton = document.getElementById("button2")
@@ -29,7 +30,7 @@ function jsonDataDisplay(){
 
                 console.log(data)
                 data.forEach(element => {
-                    console.log(element["phoneNumber"])
+                    //console.log(element["phoneNumber"])
                         displayNamesFromServer(element["Name"],element["phoneNumber"])
                     
                 })
@@ -58,7 +59,7 @@ function fillingImages(data){
 });
 }
 function postingData(){
-    registerButton.addEventListener('click', (event) => {
+    registerButton.addEventListener("click", (event) => {
         event.preventDefault()
         let myFormObj = {}
         myFormObj["Name"] = VetFormName.value
@@ -89,19 +90,18 @@ function hoverlinkFunction(){
     
 }
 function likeinteractivity(){
-    // const EMPTY_HEART = '♡'
-    // const FULL_HEART = '♥'
-    // // likeHeart.addEventListener("click", (event) => {
-    //     let heart = event.target
-    // if (heart.textContent === EMPTY_HEART)
-    // {
-    //   heart.textContent = FULL_HEART
-    //   heart.classList.add('activated-heart')
-    // }else{
-    //   heart.textContent = EMPTY_HEART
-    //   heart.classList.remove('activated-heart')
-    // }
-
-    // }
-   // )
-}
+    const EMPTY_HEART = '♡'
+    const FULL_HEART = '♥'
+    likeHeart2.addEventListener("click",(event) => {
+        event.preventDefault()
+        let heart = event.target
+         if (heart.textContent === EMPTY_HEART)
+             {
+               heart.textContent = FULL_HEART
+               heart.classList.add('activated-heart')
+             }else{
+               heart.textContent = EMPTY_HEART
+               heart.classList.remove('activated-heart')
+             }   
+    }
+        )}
