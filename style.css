@@ -42,10 +42,19 @@ body{
     line-height: 4;
     width: 900px;
     margin-left: 150px;
-
+    position: relative;
 }
 .content1 ul{
     padding-left: 50px;
+    position: relative;
+}
+.content1 span{
+    font-size: 150px;
+}
+.like-glyph{
+    position: absolute;
+    top: 260px;
+    left: -140px;
 }
 .doggy2{
     text-align: center;
@@ -127,7 +136,9 @@ body{
 .myTable table tr{
     padding-left: 0px;
 }
-
+h2{
+    text-align: center;
+}
 img{
     max-width: 30%;
     max-height: 30%;
@@ -157,10 +168,11 @@ table,th,td{
     text-align: center;
     background-color:#202a45;
     color:#ffa500;
-    margin-top: -100px;
-    
+    margin-top: -180px;  
 }
-
+.vetList #myVeterinaryList li{
+    list-style: none;
+}
 @media screen and (max-width: 1250px) {
     .contents {
         flex-direction: column;
@@ -178,3 +190,4 @@ table,th,td{
     margin-left: 50px;
   }  
 }
+

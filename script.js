@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded",(event) => {
     jsonDataDisplay()
     likeinteractivity()
     postingData()
-    //getData(VetFormName.value,vetPhoneNumber.value)
 })
 const clicked1 = document.getElementById("button1")
 const VetFormName = document.getElementById("vetName")
@@ -27,10 +26,7 @@ function jsonDataDisplay(){
     fetch("http://localhost:3000/VeterinaryDoctors")
         .then(response => response.json())
             .then(data => {
-
-                console.log(data)
                 data.forEach(element => {
-                    console.log(element["phoneNumber"])
                         displayNamesFromServer(element["Name"],element["phoneNumber"])
                     
                 })
@@ -40,7 +36,7 @@ function displayNamesFromServer(element,number){
     const myList = document.createElement("li")
     
     myList.addEventListener("click",()=>
-    {
+    {   //event.preventDefault()
         const numberLabel = document.createElement("label")
         numberLabel.textContent = "      :" + `${number}`
         myList.appendChild(numberLabel)
@@ -62,37 +58,23 @@ function fillingImages(data){
 function postingData(){
     registerButton.addEventListener('click', (event) => {
         event.preventDefault()
-        //const myName = VetFormName.value
-        //const myNumber = vetPhoneNumber.value
         let myFormObj = {}
         myFormObj["Name"] = VetFormName.value
         myFormObj["phoneNumber"] = vetPhoneNumber.value
         console.log(JSON.stringify(myFormObj))
-        //console.log(myFormObj)
+        const configuredObject = {
+            method : "POST",
+            headers: {
+                "content-Type" : "application/json",
+                Accept : "application/json",
+                },
+                body:JSON.stringify(myFormObj)
+                }
+         fetch("http://localhost:3000/VeterinaryDoctors",configuredObject)
+          .then(response => response.json())
+             .then(data => console.log(data))
+        
 
-
-
-
-
-
-        //console.log(JSON.stringify(VetFormName.value))
-        //console.log(JSON.stringify(vetPhoneNumber.value))
-        // console.log(myName)
-        // console.log(myNumber)
-        // fetch("http://localhost:3000/VeterinaryDoctors",configuredObject)
-        //  .then(response => response.json())
-        //     .then(data => console.log(data))
-
-        // const configuredObject = {
-
-        //     method : "POST",
-        //     headers: {
-        //         "content-Type" : "application/json",
-        //         Accept : "application/json",
-        //         },
-        //         body:JSON.stringify(VetFormName.value,vetPhoneNumber)
-        //         }
-        //         console.log(myData)
     })
    
 }
