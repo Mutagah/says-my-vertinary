@@ -32,6 +32,7 @@ body{
     padding-top: 20px;
     display: flex;
     position: relative;
+    margin-bottom: 30px;
 }
 .content1{
     border-radius: 12px;
@@ -56,7 +57,7 @@ body{
     top: 260px;
     left: -140px;
 }
-  .like-glyph2{
+.like-glyph2{
     color: #ffa500;
     position: absolute;
     top: 460px;
@@ -71,7 +72,6 @@ body{
     position: relative;
 
 }
-
 .myForm{
     box-shadow: 0px 0px 8px 2px;
     border-radius: 10px 90px;
@@ -82,21 +82,17 @@ body{
     margin-bottom: 20px;
     height: 250px;
 }
-
 .myForm h2{
     color: #ffa500;
     padding-bottom: 20px;
 }
-
 .myForm label{
     font-size: large;
     padding-right: 200px;
 }
-
 .myForm input{
     width: 200px;
 }
-
 .myForm #vetPhonenumber{
     padding: 10px 20px;
     margin-left: -10px;
@@ -115,6 +111,10 @@ body{
     font-size: x-large;
     margin-left: 20px;
 }
+a{
+    color: #fc0303;
+    text-decoration: none;
+}
 
 .myTable{
     box-shadow: 0px 0px 8px 2px;
@@ -131,13 +131,10 @@ body{
 }
 .myTable table{
     padding: 58px 100px;
-
 }
-
 .myTable table th{
     padding-top: 20px;
 }
-
 .myTable table tr{
     padding-left: 0px;
 }
@@ -153,30 +150,46 @@ h3{
     text-align: center;
     font-size: x-large;
 }
-p #animal{
+p.note{
+    font-size: xx-large;
     text-align: center;
+    color: #fc0303;
 }
 table,th,td{
-    font-size:large;
+    padding-inline: 30px;
+    text-align: center;
+    font-size: large;
     border:1px solid;
-    border-style: none;
     border-color: grey;
     color:#ffa500;
 }
-/* p .note{
-    color:#ffa500;
-    text-align: center;
-    font-size: xx-large;
-} */
+table{
+    border-style: none;
+}
+td{
+    border-style:double;
+    font-size: 18px;
+    color: #fc0303;
+    padding-inline: 30px;
+}
+th{
+    padding-bottom: 20px;
+    font-size: larger;
+}
 .vetList{ 
     padding-left: 5%;
     text-align: center;
     background-color:#202a45;
     color:#ffa500;
-    margin-top: -180px;  
+    margin-top: -150px;  
+    padding-bottom: 50px;
 }
 .vetList #myVeterinaryList li{
     list-style: none;
+}
+.vetList h3{
+    font-size: xx-large;
+    padding-top: 20px;
 }
 @media screen and (max-width: 1250px) {
     .contents {
