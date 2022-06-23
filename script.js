@@ -4,15 +4,17 @@ document.addEventListener("DOMContentLoaded",(event) => {
     fetchingData()
     jsonDataDisplay()
     likeinteractivity()
+    postingData()
+    //getData(VetFormName.value,vetPhoneNumber.value)
 })
 const clicked1 = document.getElementById("button1")
-const likeHeart = document.querySelectorAll(".like-glyph")
+const VetFormName = document.getElementById("vetName")
+const likeHeart = document.getElementsByClassName("like-glyph")
 const myListLink = document.getElementById("myDownList")
 const ImagesDivision = document.getElementById("myImages")
 const registerButton = document.getElementById("button2")
 const VetNameInput = document.getElementById("vetName")
 const vetPhoneNumber = document.getElementById("vetPhoneNumber")
-function clickedFunc(){clicked1.addEventListener("click",() => alert("Hello guys"))}
 function fetchingData(){
 fetch("https://dog.ceo/api/breed/hound/images/random/3")
     .then(resp => resp.json())
@@ -40,7 +42,7 @@ function displayNamesFromServer(element,number){
     myList.addEventListener("click",()=>
     {
         const numberLabel = document.createElement("label")
-        numberLabel.textContent = `${number}`
+        numberLabel.textContent = "      :" + `${number}`
         myList.appendChild(numberLabel)
     })
     myList.innerHTML = element;
@@ -57,25 +59,42 @@ function fillingImages(data){
     ImagesDivision.appendChild(imgTag)
 });
 }
-function postingData(myData){
-    registerButton.addEventListener("click",event => {
+function postingData(){
+    registerButton.addEventListener('click', (event) => {
         event.preventDefault()
-        //const myList = document.createElement("li")
-        // myList.innerHTML = `${myData}`
-        // document.querySelector("#myVeterinaryList").appendChild(myList)
+        //const myName = VetFormName.value
+        //const myNumber = vetPhoneNumber.value
+        let myFormObj = {}
+        myFormObj["Name"] = VetFormName.value
+        myFormObj["phoneNumber"] = vetPhoneNumber.value
+        console.log(JSON.stringify(myFormObj))
+        //console.log(myFormObj)
+
+
+
+
+
+
+        //console.log(JSON.stringify(VetFormName.value))
+        //console.log(JSON.stringify(vetPhoneNumber.value))
+        // console.log(myName)
+        // console.log(myNumber)
+        // fetch("http://localhost:3000/VeterinaryDoctors",configuredObject)
+        //  .then(response => response.json())
+        //     .then(data => console.log(data))
+
         // const configuredObject = {
+
         //     method : "POST",
         //     headers: {
         //         "content-Type" : "application/json",
         //         Accept : "application/json",
-        //     },
-        //     body:JSON.stringify(myData)
-        //     }
-    
-        // fetch(" http://localhost:3000/VeterinaryDoctors",configuredObject)
-        //     .then(response => response.json())
-        //     .then(data => console.log(data))
+        //         },
+        //         body:JSON.stringify(VetFormName.value,vetPhoneNumber)
+        //         }
+        //         console.log(myData)
     })
+   
 }
 function hoverlinkFunction(){
 
@@ -86,10 +105,9 @@ function hoverlinkFunction(){
     
 }
 function likeinteractivity(){
-    const EMPTY_HEART = '♡'
-    const FULL_HEART = '♥'
-    likeHeart.addEventListener("click", (event) => {
-        alert("Hello")
+    // const EMPTY_HEART = '♡'
+    // const FULL_HEART = '♥'
+    // // likeHeart.addEventListener("click", (event) => {
     //     let heart = event.target
     // if (heart.textContent === EMPTY_HEART)
     // {
@@ -100,5 +118,6 @@ function likeinteractivity(){
     //   heart.classList.remove('activated-heart')
     // }
 
-    })
+    // }
+   // )
 }
