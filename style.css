@@ -190,11 +190,11 @@ th{
 @media screen and (max-width: 2000px) {
     .contents {
         flex-direction: column;
-        width:auto;
+        /* width:auto; */
         align-content: stretch;
     }
 .myForm{
-    width : 1000px;
+    /* width : 1000px; */
     align-content: stretch;
     
     /* flex-direction: column;
