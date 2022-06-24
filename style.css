@@ -55,14 +55,14 @@ body{
     color: #ffa500;
     position: absolute;
     top: 460px;
-    left: 880px;
+    left: 680px;
     font-size: 160px;
     cursor: pointer;  
 } 
 .doggy2{
     text-align: center;
     margin-left: 20px;
-    width: 212px;
+    width: 167px;
     position: relative;
 }
 .myForm{
@@ -125,10 +125,11 @@ a{
     color: #fc0303;
 }
 .myTable table{
-    padding: 58px 100px;
+    padding-top: 5px;
+    padding-right :30px;
 }
 .myTable table th{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .myTable table tr{
     padding-left: 0px;
