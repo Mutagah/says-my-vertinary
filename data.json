@@ -59,6 +59,21 @@
       "Name": "Peter Munyua",
       "phoneNumber": "68482",
       "id": 12
+    },
+    {
+      "Name": "Dr. Leroy Kinyua",
+      "phoneNumber": "64643790",
+      "id": 13
+    },
+    {
+      "Name": "Dr.Doreen Chepchirchir",
+      "phoneNumber": "5754624656",
+      "id": 14
+    },
+    {
+      "Name": "David Mwadime",
+      "phoneNumber": "647473984",
+      "id": 15
     }
   ]
 }

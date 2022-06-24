@@ -73,7 +73,7 @@ function postingData(){
         fetch("http://localhost:3000/VeterinaryDoctors",configuredObject)
          .then(response => response.json())
             .then(data => console.log(data))
-
+        document.getElementById("myForm").reset();
         
     })
    
