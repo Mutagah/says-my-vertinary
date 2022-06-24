@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",(event) => {
 })
 const clicked1 = document.getElementById("button1")
 const VetFormName = document.getElementById("vetName")
-const likeHeart = document.getElementsByClassName("like-glyph")
+const likeHeart2 = document.getElementById("button3")
 const myListLink = document.getElementById("myDownList")
 const ImagesDivision = document.getElementById("myImages")
 const registerButton = document.getElementById("button2")
@@ -26,17 +26,17 @@ function jsonDataDisplay(){
     fetch("http://localhost:3000/VeterinaryDoctors")
         .then(response => response.json())
             .then(data => {
+
+                console.log(data)
                 data.forEach(element => {
                         displayNamesFromServer(element["Name"],element["phoneNumber"])
-                    
                 })
             })
 }
 function displayNamesFromServer(element,number){
     const myList = document.createElement("li")
-    
     myList.addEventListener("click",()=>
-    {   //event.preventDefault()
+    {
         const numberLabel = document.createElement("label")
         numberLabel.textContent = "      :" + `${number}`
         myList.appendChild(numberLabel)
@@ -56,25 +56,25 @@ function fillingImages(data){
 });
 }
 function postingData(){
-    registerButton.addEventListener('click', (event) => {
+    registerButton.addEventListener("click", (event) => {
         event.preventDefault()
         let myFormObj = {}
         myFormObj["Name"] = VetFormName.value
         myFormObj["phoneNumber"] = vetPhoneNumber.value
         console.log(JSON.stringify(myFormObj))
         const configuredObject = {
-            method : "POST",
-            headers: {
-                "content-Type" : "application/json",
-                Accept : "application/json",
-                },
-                body:JSON.stringify(myFormObj)
-                }
-         fetch("http://localhost:3000/VeterinaryDoctors",configuredObject)
-          .then(response => response.json())
-             .then(data => console.log(data))
-        
+                method : "POST",
+                headers: {
+                    "content-Type" : "application/json",
+                    Accept : "application/json",
+                    },
+                    body:JSON.stringify(myFormObj)
+                    }
+        fetch("http://localhost:3000/VeterinaryDoctors",configuredObject)
+         .then(response => response.json())
+            .then(data => console.log(data))
 
+        
     })
    
 }
@@ -87,19 +87,18 @@ function hoverlinkFunction(){
     
 }
 function likeinteractivity(){
-    // const EMPTY_HEART = '♡'
-    // const FULL_HEART = '♥'
-    // // likeHeart.addEventListener("click", (event) => {
-    //     let heart = event.target
-    // if (heart.textContent === EMPTY_HEART)
-    // {
-    //   heart.textContent = FULL_HEART
-    //   heart.classList.add('activated-heart')
-    // }else{
-    //   heart.textContent = EMPTY_HEART
-    //   heart.classList.remove('activated-heart')
-    // }
-
-    // }
-   // )
-}
+    const EMPTY_HEART = '♡'
+    const FULL_HEART = '♥'
+    likeHeart2.addEventListener("click",(event) => {
+        event.preventDefault()
+        let heart = event.target
+         if (heart.textContent === EMPTY_HEART)
+             {
+               heart.textContent = FULL_HEART
+               heart.classList.add('activated-heart')
+             }else{
+               heart.textContent = EMPTY_HEART
+               heart.classList.remove('activated-heart')
+             }   
+    }
+        )}
