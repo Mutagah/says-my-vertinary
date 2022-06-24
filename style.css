@@ -196,7 +196,7 @@ th{
 .myForm{
     /* width : 1000px; */
     align-content: stretch;
-    text-align: left;
+    
     /* flex-direction: column;
     margin-top: 20px;
         width : 500px;
@@ -211,9 +211,6 @@ th{
 .myTable{
     display: none;
   }
-.myForm input{
-    margin-left: -10px;
-}
 header
 {
 align-content: stretch;
@@ -228,6 +225,6 @@ align-content: stretch;
     position: absolute;
     font-size: 50px;
     margin-left : -630px;
-    margin-top: -80px;
+    margin-top: -200px;
 }
 }
