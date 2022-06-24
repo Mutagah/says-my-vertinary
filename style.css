@@ -207,14 +207,15 @@ th{
 .myTable{
     display: none;
   }
+header
+{
+width: auto;
+}
 .vetList{
     margin-top: 0px;
   }
 #myImages img {
-    /* text-align: center; */
-    margin-left: -20px;
-    height: 400px;
-    width: 2500px;
+    display: none;
 }
 .like-glyph2{
     position: absolute;
