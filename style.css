@@ -194,19 +194,22 @@ th{
         align-content: stretch;
     }
 .myForm{
-    flex-direction: column;
+    /* flex-direction: column;
     margin-top: 20px;
         width : 500px;
         height : 350px;
-        margin-left: 40px;
+        margin-left: 40px; */
+        align-content: stretch;
     }
 .content1{
-    width:auto;
+    /* width:auto; */
     flex-direction: column;
-    margin-left: 50px;
+    align-content: stretch;
+    /* margin-left: 50px; */
 }  
 .myTable{
-    display: none;
+    align-content: stretch;
+    /* display: none; */
   }
 header
 {
