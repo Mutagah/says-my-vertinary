@@ -191,6 +191,7 @@ th{
     .contents {
         flex-direction: column;
         width:auto;
+        align-content: stretch;
     }
 .myForm{
     flex-direction: column;
@@ -209,7 +210,7 @@ th{
   }
 header
 {
-width: auto;
+align-content: stretch;
 }
 .vetList{
     margin-top: 0px;
