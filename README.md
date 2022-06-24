@@ -7,14 +7,16 @@
 
 ## Project Setup Instructions: 
 
-1. Clone the project to your local machine and on successful cloning, change the directory to the cloned folder says-my-vertinary.>>
+1. Install json server to your machine and ensure it is done globally
+
+2. Clone the project to your local machine and on successful cloning, change the directory to the cloned folder says-my-vertinary.>>
                       `cd says-my-vertinary`<<
 
-2. Launch json live server from the `says-my-vertinary` directory and watch the data.json file >>
+3. Launch json live server from the `says-my-vertinary` directory and watch the data.json file >>
                    `json-server --watch data.json`<<
         - A successful resource >> `http://localhost:3000/VeterinaryDoctors` << shoule be created that allows you to `GET` and `POST` data upon clicking the ` Register with us ` button
 
-3.  The web page project is now readily available for interaction
+4.  The web page project is now readily available for interaction
         
         NB : Ensure you have stable internet connection for a smooth transition.
 ## Link to Live Site on Github Pages:
