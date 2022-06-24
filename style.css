@@ -50,17 +50,6 @@ body{
 .content1 span{
     font-size: 150px;
 }
-/* .like-glyph{
-    border-style: none;
-    color: #ffa500;
-    cursor: pointer;
-    position: absolute;
-    font-size: 160px;
-    top: 260px;
-    left: -140px;
-    margin-left: -10px;
-    margin-top: 200px;
-} */
 .like-glyph2{
     border-style: none;
     color: #ffa500;
@@ -209,19 +198,18 @@ th{
         height : 350px;
         margin-left: 40px;
     }
-
-  .content1{
+.content1{
     width:auto;
     flex-direction: column;
     margin-left: 50px;
-  }  
-  .myTable{
+}  
+.myTable{
     display: none;
   }
-  .vetList{
+.vetList{
     margin-top: 0px;
   }
-  #myImages img {
+#myImages img {
     /* text-align: center; */
     margin-left: -20px;
     height: 400px;
@@ -233,4 +221,4 @@ th{
     margin-left : -630px;
     margin-top: -80px;
 }
-
+}

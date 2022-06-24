@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded",(event) => {
 })
 const clicked1 = document.getElementById("button1")
 const VetFormName = document.getElementById("vetName")
-// const likeHeart = document.getElementById("button2")
 const likeHeart2 = document.getElementById("button3")
 const myListLink = document.getElementById("myDownList")
 const ImagesDivision = document.getElementById("myImages")
@@ -30,9 +29,7 @@ function jsonDataDisplay(){
 
                 console.log(data)
                 data.forEach(element => {
-                    //console.log(element["phoneNumber"])
                         displayNamesFromServer(element["Name"],element["phoneNumber"])
-                    
                 })
             })
 }
