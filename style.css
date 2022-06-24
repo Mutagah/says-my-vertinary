@@ -187,14 +187,15 @@ th{
     font-size: xx-large;
     padding-top: 20px;
 }
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 750px) {
     .contents {
+        margin-left: -50px;
         flex-direction: column;
         align-content: stretch;
     }
 .myForm{
     position :absolute;
-    width:500px;
+    width:400px;
     margin-top: 20px;
     align-content: stretch;
     flex-direction: column;
@@ -204,7 +205,7 @@ th{
         margin-left: -20px;
     }
     .myForm label{
-        margin-left: -50px;
+        margin-left: 60px;
     }
 .content1{
     width:auto;
