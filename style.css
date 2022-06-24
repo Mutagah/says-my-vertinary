@@ -190,18 +190,21 @@ th{
 @media screen and (max-width: 2000px) {
     .contents {
         flex-direction: column;
-        /* width:auto; */
         align-content: stretch;
     }
 .myForm{
-    /* width : 1000px; */
-    align-content: stretch;
-    
-    /* flex-direction: column;
+    position :absolute;
+    width:500px;
     margin-top: 20px;
-        width : 500px;
-        height : 350px;
-        margin-left: 40px; */
+    align-content: stretch;
+    flex-direction: column;
+    height: 400px;
+    }
+    .myForm input {
+        margin-left: -20px;
+    }
+    .myForm label{
+        margin-left: -50px;
     }
 .content1{
     width:auto;
@@ -216,7 +219,7 @@ header
 align-content: stretch;
 }
 .vetList{
-    margin-top: 0px;
+    margin-top: 380px;
   }
 #myImages img {
     display: none;
@@ -225,6 +228,6 @@ align-content: stretch;
     position: absolute;
     font-size: 50px;
     margin-left : -630px;
-    margin-top: -200px;
+    margin-top: -150px;
 }
 }
