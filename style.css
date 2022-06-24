@@ -194,11 +194,14 @@ th{
         align-content: stretch;
     }
 .myForm{
-    flex-direction: column;
+    width : 1000px;
+    align-content: stretch;
+    
+    /* flex-direction: column;
     margin-top: 20px;
         width : 500px;
         height : 350px;
-        margin-left: 40px;
+        margin-left: 40px; */
     }
 .content1{
     width:auto;
