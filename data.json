@@ -29,6 +29,7 @@
       "Name": "Dr. Allan Mauko",
       "phoneNumber": "+242771221234",
       "id": 6
+<<<<<<< HEAD
     },
     {
       "Name": "Dr. Martin Mwala",
@@ -59,6 +60,8 @@
       "Name": "Peter Munyua",
       "phoneNumber": "68482",
       "id": 12
+=======
+>>>>>>> gh-pages
     }
   ]
 }
